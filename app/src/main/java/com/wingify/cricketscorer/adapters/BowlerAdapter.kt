@@ -13,8 +13,10 @@ class BowlerAdapter(private val context: Context, private val itemsData: ArrayLi
     RecyclerView.Adapter<BowlerAdapter.BowlerViewHolder>() {
 
     class BowlerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-
+        val bowlerName: TextView = itemView.findViewById(R.id.bowler_name)
+        val bowlerOvers: TextView = itemView.findViewById(R.id.bowler_overs)
+        val bowlerWickets: TextView = itemView.findViewById(R.id.bowler_wickets)
+        val bowlerMaidenOvers: TextView = itemView.findViewById(R.id.bowler_maiden)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BowlerViewHolder {
@@ -24,7 +26,10 @@ class BowlerAdapter(private val context: Context, private val itemsData: ArrayLi
     }
 
     override fun onBindViewHolder(holder: BowlerViewHolder, position: Int) {
-
+        holder.bowlerName.text = itemsData[position].bowlerName
+        holder.bowlerOvers.text = itemsData[position].overs + " Overs"
+        holder.bowlerWickets.text = itemsData[position].wickets + " Wickets"
+        holder.bowlerMaidenOvers.text = itemsData[position].maidenOvers + " Maiden Overs"
     }
 
     override fun getItemCount(): Int {
