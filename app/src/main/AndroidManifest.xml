@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wingify.cricketscorer">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +17,10 @@
         android:theme="@style/Theme.CricketScorer"
         tools:targetApi="31">
         <activity
-            android:name=".BatsmanActivity"
+            android:name=".activities.BatsmanActivity"
             android:exported="false" />
         <activity
-            android:name=".BowlerActivity"
+            android:name=".activities.BowlerActivity"
             android:exported="false" />
         <activity
             android:name=".activities.DashboardActivity"
