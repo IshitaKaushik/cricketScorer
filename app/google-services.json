@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244957527660",
+    "project_id": "cricketscorer-4ec5f",
+    "storage_bucket": "cricketscorer-4ec5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244957527660:android:0c6e48db090cd6f20b6249",
+        "android_client_info": {
+          "package_name": "com.wingify.cricketscorer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244957527660-g2a7v6a1bnjkeafnajt03b603f2oiii9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFlF10k5vlOngZsBd78sZBGcaseixJZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244957527660-g2a7v6a1bnjkeafnajt03b603f2oiii9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
